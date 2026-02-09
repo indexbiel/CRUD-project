@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-color: #dfdfdf;
+}
+
+
+
+.navegation {
+  background-color: #ffffff;
+  font-weight: bold;
+}
+
+nav ul {
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  flex-direction: row-reverse;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+
+.topo {
+  padding: 20px;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-size: 48px;
+
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+
+.container {
+  margin: 40px auto;
+  padding: 30px;
+  max-width: 900px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+
+
+.cadastro h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.cadastro form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+input {
+  height: 45px;
+  padding: 0 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+button {
+  height: 45px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+.produtos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.product-img img {
+  width: 150px;
+  border-radius: 12px;
+}
+
+.product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.btn-mais {
+  align-self: flex-start;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+
+
+.produto-dados {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.valor {
+  font-weight: bold;
+}
