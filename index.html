@@ -5,15 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estoque Express</title>
-
     <link rel="stylesheet" href="style.css">
-
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Raleway:wght@400;600&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
 </head>
 
 <body>
@@ -30,31 +25,26 @@
         </nav>
     </header>
 
-  
     <section class="topo">
         <h1 class="logo">Express | Cadastrar itens</h1>
     </section>
-
+     
     <main class="container">
-
-       
+        
         <section class="cadastro">
             <h2>Cadastre aqui novos produtos para seu estoque</h2>
 
             <form id="form-produto">
-                <input type="text" placeholder="URL da foto" id="foto">
-                <input type="text" placeholder="Nome do produto" id="nome">
-                <input type="text" placeholder="Valor" id="valor">
-                <input type="number" placeholder="Quantidade" id="quantidade" min="1">
-
-                <button type="submit">Adicionar item</button>
+                <input type="text" placeholder="URL da foto" id="foto" required>
+                <input type="text" placeholder="Nome do produto" id="nome" required>
+                <input type="text" placeholder="Valor" id="valor" required>
+                <input type="number" placeholder="Quantidade" id="quantidade" min="1" required>
+                <button type="submit">Adicionar item</button> <!-- ✅ CORRIGIDO -->
             </form>
         </section>
-
-      
+       
         <section class="produtos">
 
-            
             <article class="item">
                 <div class="product-img">
                     <img src="./img/colar.webp" alt="Colar de pérolas">
@@ -70,9 +60,19 @@
                     <span class="quantidade">Qtd: 1</span>
                     <span class="valor">R$ 129,90</span>
                 </div>
+                
+                <div class="icons">
+                    <button class="btn-delete">
+                        <span class="material-symbols-outlined">delete</span>
+                    </button>
+                    <button class="btn-edit">
+                        <span class="material-symbols-outlined">edit</span>
+                    </button>
+                </div>
+                <!-- ✅ REMOVIDO O </div> FANTASMA -->
             </article>
 
-       
+
             <article class="item">
                 <div class="product-img">
                     <img src="./img/led.webp" alt="Led para quarto">
@@ -88,7 +88,18 @@
                     <span class="quantidade">Qtd: 2</span>
                     <span class="valor">R$ 259,99</span>
                 </div>
+
+                <div class="icons">
+                    <button class="btn-delete">
+                        <span class="material-symbols-outlined">delete</span>
+                    </button>
+                    <button class="btn-edit">
+                        <span class="material-symbols-outlined">edit</span>
+                    </button>
+                </div>
+                <!-- ✅ REMOVIDO O </div> FANTASMA -->
             </article>
+
 
             <article class="item">
                 <div class="product-img">
@@ -105,12 +116,24 @@
                     <span class="quantidade">Qtd: 1</span>
                     <span class="valor">R$ 189,90</span>
                 </div>
+                
+                <div class="icons">
+                    <button class="btn-delete">
+                        <span class="material-symbols-outlined">delete</span>
+                    </button>
+                    <button class="btn-edit">
+                        <span class="material-symbols-outlined">edit</span>
+                    </button>
+                </div>
             </article>
 
         </section>
-
+        
+        <section id="listarProdutos"></section>  
     </main>
-
+    
+    <script src="script.js"></script>
+          
 </body>
 
 </html>
