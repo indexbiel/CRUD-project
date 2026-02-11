@@ -1,6 +1,3 @@
-Perfeito 😎🔥 vou criar um README profissional, mas direto e objetivo (do jeito que você gosta).
-
-Você pode copiar e colar no seu README.md.
 
 📦 Estoque Express – CRUD de Produtos
 
